@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
+
+/* 手寫體 */
+@font-face {
+  font-family: 'CircleFont';
+  src: url(CircleFont_v2.woff2);
+}
+
+
+html {
+  box-sizing: border-box;
+  background-color: rgb(36, 20, 20);
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: rgb(36, 20, 20);
+  /* #6A4C9C */
+  color: #FAECD6;
+  font-family: "Kaisei Tokumin", 'Noto Serif JP', serif;
+}
+
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 60rem;
+  height: 6rem;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+
+  /* backdrop-filter: blur(10px); */
+  /* background: rgba(0, 0, 0, 0.2); */
+  background-color: #3C552D;
+  /* border-bottom: 5px inset #3e313d; */
+  /* box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5); */
+}
+
+.header-title {
+  padding: 0;
+  margin: 0;
+  margin-left: 5vw;
+  font-size: 28px;
+  /* color: #fff; */
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* nav */
+.nav {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-right: 5vw;
+}
+
+.nav-item {
+  display: inline-block;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.nav-item:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #FAECD6;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 8rem;
+  height: 7rem;
+  padding: 0 2vw;
+  margin: 0 auto;
+  margin-top: -1rem;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%); /* 形狀裁切*/
+  transition: all .5s;
+}
+
+
+.nav-link:hover {
+  color: #FAECD6;
+  background-color: #820000;
+  transform: translateY(10px); /* 向下移動 */
+}
+
+.nav-link:focus {
+  color: #FAECD6;
+}
+
+/* main area */
+
+.image-container {
+  position: relative; /* 預設相對定位 */
+  z-index: 0;
+  margin-top: -7rem;
+  height: 100vh;
+  width: 60vw;
+  min-width: 42rem;
+  min-height: 41rem;
+  min-width: 30rem;
+}
+
+.image {
+  height: 100vh;
+  width: 60vw;
+  min-width: 42rem;
+  min-height: 41rem;
+  object-fit: cover;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-text {
+  margin: auto 3rem;
+  z-index: 2;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f0eded;
+}
+
+.fa-spider {
+  font-size: 35px;
+  color: #820000;
+}
+
+.score-title {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.score {
+  font-size: 2rem;
+}
+
+.score span {
+  color: #f0eded;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-botton {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;
+  margin-right: 1rem;
+  text-decoration: none;
+  height: 2.5em;
+  width: 6em;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: #820000;
+  border: 2px solid #FAECD6;
+  color: #FAECD6;
+  transition: all 0.3s;
+}
+
+.link-botton:hover {
+  background-color: #990909;
+  /* border: 3px dotted #F2DEBA; */
+  transform: scale(1.03);
+  color: #F2DEBA;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); */
+}
+
+.link-botton:active {
+  background-color: #365038;
+  /* border-color: #365038; */
+}
+
+/* 框框 */
+.square {
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+  width: 90vw;
+  height: 80.5vh;
+  min-height: 32rem;
+  min-width: 56rem;
+  border: 5px dashed #F2DEBA;
+  z-index: 1;
+}
+
+/* 作業區 */
+.container-area {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 5vw;
+  min-width: 960px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  padding: 0;
+  padding-left: 1.5rem;
+  border-top: 10px ridge #F2DEBA;
+}
+
+.flag-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1rem;
+}
+
+.ppt-link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  height: 5em;
+  width: 5em;
+  padding-top: 0.7em;
+  background-color: #3C552D;
+  color: #FAECD6;
+}
+
+.flag {
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
+  transition: all 0.3s;
+}
+
+.ppt-link:hover {
+  color: #F2DEBA;
+  transform: scale(1.03); /* 放大效果 */
+  background-color: #4a663a;
+}
+
+.hw-title {
+  height: 4em;
+  width: 5em;
+  padding-top: 1em;
+  background-color: #820000;
+  margin-right: 2rem;
+}
+
+
+
+
+/* 表格 */
+.to-do-list {
+  padding: 20px;
+  border: 3px dashed #F2DEBA;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgba(255, 255, 255, 0);
+  /* rgba(217,140,144,1) */
+  font-size: 12pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border-bottom: 2px solid #FAECD6;
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+td {
+  padding: 8px 15px;
+}
+
+.flipswitch {
+  position: relative;
+  -webkit-appearance: initial;
+  /* background: rgb(36, 20, 20); */
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  cursor: pointer;
+  margin-left: 15px;
+  border: 1px solid #ddd;
+}
+
+.line {
+  border-bottom: 1px solid #FAECD6;
+}
+
+.flipswitch:checked::after {
+  content: "✔";
+  position: absolute;
+  font-size: 25px;
+  color: #990909; /* 白色勾 */
+  top: -15px;
+  left: 0px;
+}
+
+
+
+
+
+/* Slider 容器 */
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+  width: 55%;
+}
+
+/* Slider 區域 */
+.slider-area {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%; /* 假設有兩個 slider-box */
+  height: 70%;
+}
+
+/* 每個 slider-box */
+.slider-box {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 2rem;
+}
+
+.section-score {
+  font-size: 32px;
+}
+
+.section-score span {
+  font-size: 70px;
+}
+
+/* 按鈕樣式 */
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: rgb(36, 20, 20);
+  border: 3px dashed #FAECD6;
+  color: #FAECD6;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control-botton:hover {
+  /* background-color: #FAECD6; */
+  border: 3px solid #FAECD6;
+}
+
+.control-botton.active {
+  background-color: #820000;
+  color: #FAECD6;
+  border-color: #820000;
+}
+
+.hide {
+  display: none;
+}
+
