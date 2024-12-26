@@ -260,6 +260,10 @@ body {
   background-color: #4a663a;
 }
 
+.github {
+  padding-top: 1.5em;
+}
+
 .hw-title {
   height: 4em;
   width: 5em;
@@ -267,6 +271,7 @@ body {
   background-color: #820000;
   margin-right: 2rem;
 }
+
 
 
 
@@ -346,6 +351,11 @@ td {
   height: 70%;
 }
 
+.video-area {
+  display: flex;
+  height: 70%;
+}
+
 /* 每個 slider-box */
 .slider-box {
   width: 100%;
@@ -395,6 +405,10 @@ td {
   background-color: #820000;
   color: #FAECD6;
   border-color: #820000;
+}
+
+.end {
+  justify-content: end;
 }
 
 .hide {
