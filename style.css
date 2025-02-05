@@ -53,8 +53,9 @@ body {
   font-size: 28px;
   /* color: #fff; */
   font-weight: 700;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
+
 
 /* nav */
 .nav {
@@ -155,6 +156,7 @@ body {
   color: #820000;
 }
 
+
 .score-title {
   margin-top: 2rem;
   margin-bottom: 0;
@@ -208,6 +210,7 @@ body {
 }
 
 @media (max-width: 1000px) {
+
   .image, .image-container {
     width: 100vw;
   }
@@ -228,6 +231,23 @@ body {
 
   .name {
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro-text {
+    position: absolute;
+    top: 45vh;
+    left: 10vw;
+  }
+
+
+  .fa-spider {
+    display: none;
+  }
+
+  .link {
+    flex-direction: column;
   }
 }
 
@@ -310,6 +330,12 @@ body {
 .to-do-list {
   padding: 20px;
   border: 3px dashed #F2DEBA;
+}
+
+@media (max-width: 425px) {
+  .to-do-list {
+    display: none;
+  }
 }
 
 
